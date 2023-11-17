@@ -1,0 +1,65 @@
+Question 1
+D. why is the remove method faster in the linked list than in an array
+
+The reason for the remove method  for be faster in an array is because it operates in linear time,
+O(N/2), where N is the length of the string. This operation takes linear time, O(n), where n
+is the number of elements in the array, because the time complexity scales with the size of the array
+
+
+E. Explain the diffrence b/n equals () method and equality(==)
+
+The equals():  method is a method provided by the Object class in Java, and it 
+is meant for comparing the content or values of objects for equality.
+Usage: It is typically overridden in custom classes to provide a meaningful comparison 
+of the object's logic
+== Operator:
+Purpose: The == operator in Java is used for reference comparison. It checks if two 
+references point to the same memory location, i.e., if they refer to the exact same object.
+Usage: It is used to compare primitive types and to check if two object references refer to the exact same object in memory.
+Therfore, equals() method compares the content, while  operator(`==`)compares the references.
+
+F.Explanation of method overloading and method overriding
+
+Method overloading is a feature in Java that allows a class to have multiple methods
+ with the same name but different parameters. The methods must have a different number 
+or type of parameters, or both. Overloading is a form of compile-time polymorphism (static polymorphism).
+Key points about method overloading:
+
+Method Overriding:
+
+Method overriding is a feature in Java that allows a subclass to provide a specific implementation 
+for a method that is already provided by its superclass. The overridden method in the subclass must 
+have the same method signature (name, return type, and parameters) as the method in the superclass.
+Overriding is a form of runtime polymorphism (dynamic polymorphism).
+Therfor, method overloading is about having multiple methods with the same name but different parameters in a single class, 
+While method overriding is about a subclass providing its own implementation for a method from the parent class.
+
+
+
+G.Highlighting the difference b/n interfaces and abstract classes
+
+Interfaces and abstract classes are both concepts in Java that are used to achieve abstraction 
+and provide a way to declare methods that must be implemented by subclasses. However,
+ there are several key differences between interfaces and abstract classes:
+Abstract Classes:
+
+Abstract classes can have both abstract and non-abstract methods. Abstract methods are declared with the `abstract` keyword and do not have
+method bodies, while non-abstract methods have method bodies.
+   - this classes can have fields, constructors, and instance methods.
+   - Abstract classes can be used for code sharing among related classes.
+   - may include fields and constructor methods. Can have both abstract methods (methods without a body) and concrete methods (methods with a body).
+	Subclasses may or may not override abstract methods.
+	Can have instance variables
+
+Interfaces:
+
+ - Interfaces are implicitly abstract, which means that all methods defined in an interface are abstract and it do not have method bodies.
+	Can only declare abstract methods. All methods in an interface are implicitly public and abstract. Cannot have instance variables 
+ - also here all fields are implicitly public, static, and final, and they must be initialized.
+  - can help us to define contracts
+   - also allow for multiple inheritance
+
+
+Generally,  Interfaces provide a contract for classes to implement and support multiple inheritance by allowing classes to implement 
+multiple interfaces. and Abstract classes can provide a partial implementation and are used when you want to share common code among related 
+classes but still allow subclasses to define their own specific behaviors
